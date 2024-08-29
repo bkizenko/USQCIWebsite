@@ -1,7 +1,5 @@
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { app } from "./firebase"; // Import the initialized Firebase app
-
-const auth = getAuth(app);
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "./firebase"; // Import the initialized Firebase auth
 
 export const signUpWithEmailPassword = (email, password) => {
   return createUserWithEmailAndPassword(auth, email, password)
