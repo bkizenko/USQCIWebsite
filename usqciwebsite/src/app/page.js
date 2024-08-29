@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { Component } from "@/components/component";
 
 export default function Home() {
   return (
-   <div> 
-    <h1>fucking trucking </h1>
-   </div>
+    <div>
+      <Component />
+    </div>
   );
 }
