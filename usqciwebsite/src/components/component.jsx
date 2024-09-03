@@ -10,13 +10,15 @@ export function Component() {
           <TruckIcon className="h-8 w-8" />
           <span className="text-2xl font-bold">US Quality Carrier</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Home</Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>About</Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Services</Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Contact</Link>
-        </nav>
-        <Button>Get a Quote</Button>
+        <div className="flex items-center gap-6">
+          <nav className="flex items-center gap-6">
+            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Home</Link>
+            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>About</Link>
+            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Services</Link>
+            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Contact</Link>
+          </nav>
+          <Button>Get a Quote</Button>
+        </div>
       </header>
       <main className="flex-1">
         <section className="relative overflow-hidden">

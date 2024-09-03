@@ -9,7 +9,7 @@ export default function VideoBackground() {
       loop
       muted
       playsInline
-      className="absolute top-0 left-0 w-full h-full object-cover filter blur-md"
+      className="absolute top-0 left-0 w-full h-full object-cover filter blur-sm"
       onError={(e) => {
         console.error("Video error:", e.target.error);
       }}
