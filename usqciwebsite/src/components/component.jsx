@@ -6,16 +6,18 @@ export function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
-        <Link href="#" className="flex items-center gap-2" prefetch={false}>
+        <Link href="/" className="flex items-center gap-2" prefetch={false}>
           <TruckIcon className="h-8 w-8" />
           <span className="text-2xl font-bold">US Quality Carrier</span>
         </Link>
         <div className="flex items-center gap-6">
           <nav className="flex items-center gap-6">
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Home</Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>About</Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Services</Link>
-            <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Contact</Link>
+            <Link href="/" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Home</Link>
+            <Link href="/about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>About</Link>
+            <Link href="/services" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Services</Link>
+            <Link href="/contact" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Contact</Link>
+            <Link href="/login" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>Log in</Link>
+
           </nav>
           <Button>Get a Quote</Button>
         </div>
